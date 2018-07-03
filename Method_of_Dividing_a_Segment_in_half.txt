@@ -1,0 +1,11 @@
+function Method_of_Dividing_a_Segment_in_half 
+a=0.2;
+b=1;
+eps=10e-4; 
+x=(a+b)/2; % Вычисляем среднюю точку сегмента
+f_x=f(x); % Вычисляем значение функции в средней точке сегмента
+
+function f=f(x)
+  % Заданная функция
+  f=x*sin(1/x);
+end
